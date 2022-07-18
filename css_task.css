@@ -1,0 +1,110 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+p,
+dd {
+    text-indent: 5%;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+button {
+    background-color: wheat;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: goldenrod;
+    color: indigo;
+}
+
+li {
+    text-align: justify;
+}
+
+div dt {
+    font-weight: bolder;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text {
+    float: left;
+    width: 69%;
+    border-right: 20%;
+}
+
+.image {
+    float: right;
+    width: 29%;
+}
+
+.justifyClass {
+    text-align: center;
+}
+
+.index {
+    background-color: lightgray;
+    font-weight: bolder;
+}
+
+.odd {
+    background-color: yellow;
+}
+
+.even {
+    background-color: pink;
+}
+
+.centering {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pad {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    padding-bottom: 0px;
+}
+
+.conTab,
+.conTab td {
+    border: none;
+    padding-left: -20px;
+    vertical-align: top;
+}
+
+.conTab dd {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.confTab,
+td,
+th {
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px
+}

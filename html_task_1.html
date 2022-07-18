@@ -6,106 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARM Cortex Processors</title>
+    <link rel="stylesheet" href="css_task.css" type="text/css">
 </head>
 
 <body>
-    <center>
-        <h1>Introduction to ARM processors & its types and Overview to Cortex M series with deep explanation of each of the processors in this Family</h1>
-    </center>
-    <center>
-        <table border="1" align="middle">
-            <tr bgcolor="lightgrey">
-                <th>Cortex</th>
-                <th>Architecture</th>
-                <th>Pipline Stages</th>
-                <th>Sleep Mode</th>
-                <th>No. of interrupts</th>
-                <th width=150px>Reset all Registers</th>
-            </tr>
-            <tr align="middle" bgcolor="yellow">
-                <td bgcolor="lightgrey"><strong>M0</strong></td>
-                <td>ARMv6-M</td>
-                <td>3</td>
-                <td>Yes</td>
-                <td>1-32+NMI</td>
-                <td>Yes(Optional)</td>
-            </tr>
-            <tr align="middle" bgcolor="pink">
-                <td bgcolor="lightgrey"><strong>M0+</strong></td>
-                <td>ARMv6-M</td>
-                <td>2</td>
-                <td>Yes</td>
-                <td>0-32+NMI</td>
-                <td>Yes(Optional)</td>
-            </tr>
-            <tr align="middle" bgcolor="yellow">
-                <td bgcolor="lightgrey"><strong>M1</strong></td>
-                <td>ARMv7-M</td>
-                <td>3</td>
-                <td>-</td>
-                <td>1-32+NMI</td>
-                <td>Only Required/ All</td>
-            </tr>
-            <tr align="middle" bgcolor="pink">
-                <td bgcolor="lightgrey"><strong>M3</strong></td>
-                <td>ARMv7-M</td>
-                <td>3</td>
-                <td>Yes</td>
-                <td>1-240+NMI</td>
-                <td>Only Required/ All</td>
-            </tr>
-            <tr align="middle" bgcolor="yellow">
-                <td bgcolor="lightgrey"><strong>M4</strong></td>
-                <td>ARMv7E-M</td>
-                <td>3</td>
-                <td>Yes</td>
-                <td>1-240+NMI</td>
-                <td>Only Required/ All</td>
-            </tr>
-            <tr align="middle" bgcolor="pink">
-                <td bgcolor="lightgrey"><strong>M7</strong></td>
-                <td>ARMv7E-M</td>
-                <td>6</td>
-                <td>Yes</td>
-                <td>1-240+NMI</td>
-                <td>Only Required/ All except ETM/ All</td>
-            </tr>
-            <tr align="middle" bgcolor="yellow">
-                <td bgcolor="lightgrey"><strong>M23</strong></td>
-                <td>ARMv8-M Baseline</td>
-                <td>2</td>
-                <td>-</td>
-                <td>1-240+NMI</td>
-                <td>Not Enough Data</td>
-            </tr>
-            <tr align="middle" bgcolor="pink">
-                <td bgcolor="lightgrey"><strong>M33</strong></td>
-                <td>ARMv8-M Baseline</td>
-                <td>3</td>
-                <td>Yes</td>
-                <td>1-480+NMI</td>
-                <td>-</td>
-            </tr>
-            <tr align="middle" bgcolor="yellow">
-                <td bgcolor="lightgrey"><strong>M35P</strong></td>
-                <td>ARMv8-M</td>
-                <td>3</td>
-                <td>Yes</td>
-                <td>1-480+NMI</td>
-                <td>Not Enough Data</td>
-            </tr>
-            <tr align="middle" bgcolor="pink">
-                <td bgcolor="lightgrey"><strong>M55</strong></td>
-                <td>ARMv8.1 M Mainline</td>
-                <td>4</td>
-                <td>Yes</td>
-                <td>1-480+NMI</td>
-                <td>Only required/ All</td>
-            </tr>
-        </table>
-        <p>Some of the Features and Configurations Available in ARM Cortex M Series</p>
-        <button><a href="html_task.html">Go Back</a></button>
-    </center>
+    <h1>Introduction to ARM processors & its types and Overview to Cortex M series with deep explanation of each of the processors in this Family</h1>
+    <table class="confTab">
+        <tr class="index">
+            <th>Cortex</th>
+            <th>Architecture</th>
+            <th>Pipline Stages</th>
+            <th>Sleep Mode</th>
+            <th>No. of interrupts</th>
+            <th width=150px>Reset all Registers</th>
+        </tr>
+        <tr class="odd">
+            <td class="index">M0</td>
+            <td>ARMv6-M</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>1-32+NMI</td>
+            <td>Yes(Optional)</td>
+        </tr>
+        <tr class="even ">
+            <td class="index ">M0+</td>
+            <td>ARMv6-M</td>
+            <td>2</td>
+            <td>Yes</td>
+            <td>0-32+NMI</td>
+            <td>Yes(Optional)</td>
+        </tr>
+        <tr class="odd ">
+            <td class="index ">M1</td>
+            <td>ARMv7-M</td>
+            <td>3</td>
+            <td>-</td>
+            <td>1-32+NMI</td>
+            <td>Only Required/ All</td>
+        </tr>
+        <tr class="even ">
+            <td class="index ">M3</td>
+            <td>ARMv7-M</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>1-240+NMI</td>
+            <td>Only Required/ All</td>
+        </tr>
+        <tr class="odd ">
+            <td class="index ">M4</td>
+            <td>ARMv7E-M</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>1-240+NMI</td>
+            <td>Only Required/ All</td>
+        </tr>
+        <tr class="even ">
+            <td class="index ">M7</td>
+            <td>ARMv7E-M</td>
+            <td>6</td>
+            <td>Yes</td>
+            <td>1-240+NMI</td>
+            <td>Only Required/ All except ETM/ All</td>
+        </tr>
+        <tr class="odd ">
+            <td class="index ">M23</td>
+            <td>ARMv8-M Baseline</td>
+            <td>2</td>
+            <td>-</td>
+            <td>1-240+NMI</td>
+            <td>Not Enough Data</td>
+        </tr>
+        <tr class="even ">
+            <td class="index ">M33</td>
+            <td>ARMv8-M Baseline</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>1-480+NMI</td>
+            <td>-</td>
+        </tr>
+        <tr class="odd ">
+            <td class="index ">M35P</td>
+            <td>ARMv8-M</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>1-480+NMI</td>
+            <td>Not Enough Data</td>
+        </tr>
+        <tr class="even ">
+            <td class="index ">M55</td>
+            <td>ARMv8.1 M Mainline</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>1-480+NMI</td>
+            <td>Only required/ All</td>
+        </tr>
+    </table>
+    <p class="justifyClass ">Some of the Features and Configurations Available in ARM Cortex M Series</p>
+    <div class="centering"><button><a href="html_task.html ">Go Back</a></button></div>
 </body>
 
 </html>
